@@ -65,6 +65,8 @@ document.querySelector("main section").appendChild(audio);
 /// add alark clock 
 function alarm() {
     var alarmClock = prompt("How many seconds for alarm?")
+
+
 }
 
 
@@ -77,6 +79,7 @@ function sheet(e) {
    document.styleSheets[2].disabled = true;
 
 }
+btnDark.onclick = sheet;
 ///event listener stysheet - attempt 2
 //var whichSheet = 0;
 //document.styleSheets[1].disabled = true;
