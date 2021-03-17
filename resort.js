@@ -72,6 +72,9 @@ function alarm() {
 let btnDark = document.getElementsByClassName("darktheme");
 btnDark.addEventListener("click", sheet);
 function sheet(e) {
+    document.styleSheets[0].disabled = false;
+    document.styleSheets[1].disabled = true;
+    document.styleSheets[2].disabled = true;
 
 }
 
@@ -80,6 +83,9 @@ function sheet(e) {
 let btnLight = document.getElementsByClassName("lighttheme");
 btnLight.addEventListener("click" , sheet2)
 function sheet2(e) {
+  document.styleSheets[0].disabled = true;
+  document.styleSheets[2].disabled = true;
+  document.styleSheets[1].disabled = false;
 
 }
 
