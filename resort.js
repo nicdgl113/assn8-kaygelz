@@ -62,6 +62,33 @@ source.type = "audio.mpeg";
 audio.appendChild(source);
 document.querySelector("main section").appendChild(audio);
 
+/// add alark clock 
 function alarm() {
     var alarmClock = prompt("How many seconds for alarm?")
 }
+
+
+///add event listener to darktheme button
+let btnDark = document.getElementsByClassName("darktheme");
+btnDark.addEventListener("click", sheet);
+function sheet(e) {
+
+}
+
+
+///add event listener to lighttheme button
+let btnLight = document.getElementsByClassName("lighttheme");
+btnLight.addEventListener("click" , sheet2)
+function sheet2(e) {
+
+}
+
+
+
+
+
+////call functions
+sheet();
+sheet2();
+alarm();
+
