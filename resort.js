@@ -68,26 +68,26 @@ function alarm() {
 }
 
 
-///add event listener to darktheme button - attempt 1
-//let btnDark = document.getElementsByClassName("darktheme");
-//btnDark.addEventListener("click", sheet);
-//function sheet(e) {
-   // document.styleSheets[0].disabled = false;
-   // document.styleSheets[1].disabled = true;
-   // document.styleSheets[2].disabled = true;
+////add event listener to darktheme button - attempt 1
+let btnDark = document.getElementsByClassName("darktheme");
+btnDark.addEventListener("click", sheet);
+function sheet(e) {
+   document.styleSheets[0].disabled = false;
+ document.styleSheets[1].disabled = true;
+   document.styleSheets[2].disabled = true;
 
+}
+///event listener stysheet - attempt 2
+//var whichSheet = 0;
+//document.styleSheets[1].disabled = true;
+//function sheet() {
+   // document.styleSheets[whichSheet].disabled = true;
+    //whichSheet = (whichSheet == 1) ? 0 : 1;
+    //document.styleSheets[whichSheet].disabled = false;
 //}
-///event listener stysheet attempt 2
-var whichSheet = 0;
-document.styleSheets[1].disabled = true;
-function sheet() {
-    document.styleSheets[whichSheet].disabled = true;
-    whichSheet = (whichSheet == 1) ? 0 : 1;
-    document.styleSheets[whichSheet].disabled = false;
-}
-function () {
-document.getElementsByClassName("darktheme").onclick = sheet
-}
+//function () {
+//document.getElementsByClassName("darktheme").onclick = sheet
+//}
 
 
 
