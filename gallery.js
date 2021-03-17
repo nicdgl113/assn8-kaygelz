@@ -31,5 +31,5 @@ var galleryPhotos = document.createElement("main");
 var myMain = document.getElementByClassName(Image);
 myMain.appendChild(galleryPhotos);
 
-}
+
 

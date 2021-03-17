@@ -61,3 +61,7 @@ source.src = "alarm.mp3";
 source.type = "audio.mpeg";
 audio.appendChild(source);
 document.querySelector("main section").appendChild(audio);
+
+function alarm() {
+    var alarmClock = prompt("How many seconds for alarm?")
+}
